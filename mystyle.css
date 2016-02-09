@@ -1,0 +1,125 @@
+/*******************
+ * mystyle.css
+ *******************
+ * This style sheet is used for every web page in the project.
+ * Authored by Benjamin Kruger (bekroogle@gmail.com, kruger@nsuok.edu)
+ * for REU:HIT@UCA, Summer 2013. Funded in part by a grant from the NSF.
+ *
+ * Whichever copyright rules applied to code produced by students in 
+ * university research, partially funded by a government agency should
+ * apply to this code as well.
+ */
+
+
+
+/* Layout */
+
+div#container {
+	background-color: #fff;
+	width: 30em;
+	margin: auto;
+}
+
+/* Header */
+ 
+.shadow {text-shadow: #a8c 2px 2px 8px;}
+		
+img#logo {
+	height: 15%; 
+	width: 15%; 
+	float: right;
+}
+
+h1 {
+	text-align: left; 
+	color: #4F2D7F;
+	font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+	clear: both;
+	text-align: right;
+	margin-top: 10px;
+	font-style: italic;	
+}
+
+/* Body */
+
+	/* Form */
+
+	form {
+		background-color: #dcf;
+		padding: 1em;
+		box-shadow:  #a8c 2px 2px 8px;
+		border: 2px solid #4F2D7F;
+		width: -10px;
+		color: #333;
+		font-family: Helvetica, Arial, sans-serif; 
+		
+
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;  
+		border-radius:15px;
+	}
+
+	
+	label {
+		display:block;
+		font-weight:bold;
+		text-align:right;
+		width:140px;
+		float:left;
+	}
+
+	input {
+		float:left;
+		font-size:12px;
+		padding:4px 2px;
+		border:solid 1px #aacfe4;
+		width:200px;
+		margin:2px 0 20px 10px;
+		
+					padding: 3px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 900;
+		color: #4F2D7F;
+		border: 1px solid #00a;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;  
+		border-radius:5px;
+	}
+
+	.desc {
+		color:#666666;
+		display:block;
+		font-size:11px;
+		font-weight:normal;
+		text-align:right;
+		width:140px;
+	}	
+	
+	.spacer {
+		clear: both;
+		height: 1px;
+	}
+	
+	/* Results */
+	
+	#canvas-container {
+		border: 1px solid black;
+		text-align: center;
+	}
+
+/* Footer */
+
+#webcl {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+}
+	

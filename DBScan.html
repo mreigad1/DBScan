@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+	<title>DBSCAN</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<style type="text/css">
+	</style>
+	<script type="text/javascript" src="loadKernel.js"></script>
+	<script id="ReduceRoot" type="text/x-opencl" src="reduceRoot.cl"></script>
+	<script id = "CleanRoot" type="text/x-opencl" src="cleanRoot.cl"></script>
+	<script id="Scan" type="text/x-opencl" src="scan.cl"></script>
+	<script type="text/javascript" src="dbscan.js"></script>
+	<script type="text/javascript" src="partman.js"></script>
+</head>
+<body>
+<div id="container">
+	<h1 class="shadow">Parallel Border Detector</h1>
+
+	<form>
+		<label>eps:
+		<span class="desc">epsilon value</span>
+		</label>
+		<input id="eps" type="number" value="2" />
+		
+		<label>minPts:
+		<span class="desc">minimum point-density</span>
+		</label>
+		<input id="minPts" type="number" value="10" />
+		
+		<label>partSize:
+		<span class="desc">max partition width/height</span>
+		</label>
+		<input id="maxsize" type="number" value="400" />
+		
+		<label>Console Output:
+		<span class="desc">show debugging info</span>
+		</label>
+		<input type="checkbox" id="showdebug" value="1" />
+		
+		<label>Image:
+		<span class="desc">.pbm image file</span>
+		</label>
+		<input  type="file" id="begin" multiple autofocus />
+		
+		<div class="spacer"></div>
+	</form>
+
+	
+		
+
+	
+
+	<script type="text/javascript" src="readFile.js"></script>
+	<div id="output">&nbsp;</div>
+	<div id="canvas-container">
+	<canvas id="canvas"></canvas>
+	</div>
+	<script type="text/javascript">
+
+	</script>
+	</div>
+	<span id="webcl">Powered by<img id="logo" src="WebCL_Logo.png"/></span>
+</body>
+</html>
